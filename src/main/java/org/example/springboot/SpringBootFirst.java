@@ -9,7 +9,7 @@ import java.util.List;
 @RequestMapping("/api")
 public class SpringBootFirst {
 
-    private List<Message> messages = new ArrayList<>();
+    private final List<Message> messages = new ArrayList<>();
 
     @GetMapping("/hello")
     public String helloWorld() {
